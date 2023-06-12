@@ -1,0 +1,9 @@
+module.exports=function(app){
+    app.use("/users",require("./users"))
+    app.use("/transactions",require("./transactions"))
+    app.use("/budgets",require("./budgets"))
+    app.use("/savings",require("./savings"))
+    app.use("/investments",require("./investments"))
+    app.use("/taxes",require("./taxes"))
+    app.use("/auth",require("./auth"))
+}
